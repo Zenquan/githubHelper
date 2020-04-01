@@ -34,6 +34,7 @@ git clone https://github.com.cnpmjs.org/Zenquan/quickgit.git
 
 ![](https://user-gold-cdn.xitu.io/2020/4/2/171368926f5ec874?w=711&h=350&f=png&s=19088)
 ![](https://user-gold-cdn.xitu.io/2020/4/2/17136886106ef35d?w=1918&h=202&f=png&s=15283)
+![](https://user-gold-cdn.xitu.io/2020/4/2/171368d61eb89488?w=946&h=400&f=png&s=18764)
 
 最后的效果
 
