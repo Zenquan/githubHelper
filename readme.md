@@ -17,3 +17,5 @@ https://github.com/Zenquan/quickgit.git -> https://github.com.cnpmjs.org/Zenquan
 - [x] https://github.com/Zenquan/quickgit/blob/master/content-script.js -> https://github.com/Zenquan/quickgit.git
 
 - [x] https://github.com/Zenquan/quickgit/tree/master/img -> https://github.com/Zenquan/quickgit.git
+
+- [ ] 点击按钮可以调起cmd等自动git clone到默认的目录下
