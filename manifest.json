@@ -1,0 +1,35 @@
+{
+  "author": "zhenquan",
+  "background": {
+    "page": "quickgit.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["content-script.js"],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "icons":
+	{
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	},
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_title": "a quick git clone crx",
+    "default_popup": "quickgit.html"
+  },
+  "description": "这是一个帮助快速克隆git仓库的Chrome插件",
+  "manifest_version": 2,
+  "name": "quickgit",
+  "short_name": "quickgit",
+  "permissions": [
+    "tabs"
+  ],
+  "version": "1.0"
+}
