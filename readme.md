@@ -14,3 +14,5 @@ https://github.com/Zenquan/babel-import-plugin.git -> https://github.com.cnpmjs.
 - 优点：亲测！速度真的很快。
 - 缺点：但是每次都要去这么拼凑一下十分麻烦，所以就写了这样一个简单的插件来解决这个需求
 
+- [] https://github.com/Zenquan/quickgit/blob/master/content-script.js -> https://github.com.cnpmjs.org/Zenquan/babel-import-plugin.git
+
