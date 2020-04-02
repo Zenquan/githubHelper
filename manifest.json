@@ -1,7 +1,7 @@
 {
   "author": "zhenquan",
   "background": {
-    "page": "quickgit.html"
+    "page": "quickgitclone.html"
   },
   "content_scripts": [
     {
@@ -22,12 +22,12 @@
   "browser_action": {
     "default_icon": "img/icon.png",
     "default_title": "a quick git clone crx",
-    "default_popup": "quickgit.html"
+    "default_popup": "quickgitclone.html"
   },
   "description": "这是一个帮助快速克隆git仓库的Chrome插件",
   "manifest_version": 2,
-  "name": "quickgit",
-  "short_name": "quickgit",
+  "name": "quickgitclone",
+  "short_name": "quickgitclone",
   "permissions": [
     "tabs"
   ],
