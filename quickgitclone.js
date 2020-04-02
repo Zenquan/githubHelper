@@ -69,12 +69,12 @@ chrome.tabs.getSelected(null, function (tab) {
   qrodeUtil.drawImg(canvas, img)
   //绑定下载事件
   _$('btn1').addEventListener('click', () => {
-    var type = 'png';
+    let type = 'png';
     qrodeUtil.download(canvas, type);
   })
 
   _$('btn2').addEventListener('click', () => {
-    var type = 'jpg';
+    let type = 'jpg';
     qrodeUtil.download(canvas, type);
   })
 });
