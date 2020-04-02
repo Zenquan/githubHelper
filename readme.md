@@ -22,6 +22,8 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 - [x] 点击按钮复制
 
+- [x] 生成二维码
+
 ## 使用
 
 1.克隆到本地
@@ -38,4 +40,4 @@ git clone https://github.com.cnpmjs.org/Zenquan/quickgitclone.git
 
 最后的效果
 
-![](https://user-gold-cdn.xitu.io/2020/4/2/171368a4e1f11db3?w=1650&h=649&f=png&s=25844)
+![](https://user-gold-cdn.xitu.io/2020/4/2/1713937dc02ee9c0?w=805&h=406&f=png&s=9315)

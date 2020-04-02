@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body {
+    .header {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -16,22 +16,33 @@
       width: 400px;
       height: 20px;
     }
-    #copyButton {
-      width: 50px;
+    .button {
+      width: 80px;
       height: 25px;
       border: 1px solid transparent;
       border-radius: 5px;
       font-size: 10px;
       color: #fff;
       background: #1e90ff;
+      margin: 10px;
+    }
+    #qrcode {
+      display: none;
+      height: 200px;
+      margin: 20px;
     }
   </style>
 
   <head>
 
   <body>
-    <input type="text" id="input">
-    <button id="copyButton">复制</button>
+    <div class="header">
+      <input type="text" id="input">
+      <button id="copyButton" class="button">复制</button>
+      <button id="generQcode" class="button">生成二维码</button>
+    </div>
+    <div id="qrcode"></div>
+    <script src="qrcode.min.js"></script>
     <script src="quickgitclone.js" charset="UTF-8"></script>
   </body>
 
