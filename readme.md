@@ -1,4 +1,4 @@
-# quickgitcloneclone
+# quickgitclone
 
 ## 背景
 
