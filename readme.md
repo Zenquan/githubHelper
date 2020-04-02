@@ -22,7 +22,7 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 - [x] 点击按钮复制
 
-- [x] 生成二维码
+- [x] 生成和下载二维码
 
 ## 使用
 

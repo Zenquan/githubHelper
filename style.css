@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#input {
+  width: 400px;
+  height: 20px;
+}
+.button {
+  width: 80px;
+  height: 25px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 10px;
+  color: #fff;
+  background: #1e90ff;
+  margin: 10px;
+}
+#qrcode {
+  height: 200px;
+  margin: 20px;
+}
+.footer {
+  display: none;
+}

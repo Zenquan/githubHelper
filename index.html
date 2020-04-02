@@ -1,47 +1,68 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Javascript 二维码生成库：QRCode</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
-  <script type="text/javascript" src="./qrcode.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-  <input id="text" type="text" value="http://www.runoob.com" style="width:80%" /><br />
-  <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
-
-  <script type="text/javascript">
-    var qrcode = new QRCode(document.getElementById("qrcode"), {
-      width: 100,
-      height: 100
-    });
-
-    function makeCode() {
-      var elText = document.getElementById("text");
-
-      if (!elText.value) {
-        alert("Input a text");
-        elText.focus();
-        return;
-      }
-
-      qrcode.makeCode(elText.value);
+  <canvas id="canvas1"></canvas>
+  <input type="button" value="保存png图片" id="btn1" />
+  <input type="button" value="保存jpg图片" id="btn2" />
+  <script>
+    //绘制图片
+    const drawImg = url => {
+      const canvas = document.getElementById('canvas1');
+      console.log(canvas)
+      const ctx = canvas.getContext('2d');
+      let img = new Image();
+      img.onload = () => {
+        canvas.width = img.width, canvas.height = img.height;
+        ctx.drawImage(img, 0, 0, img.width, img.height);
+      };
+      img.crossOrigin = "anonymous"; //关键
+      img.src = url;
+      return canvas
     }
 
-    makeCode();
+    const canvas = drawImg(
+      "https://dss0.baidu.com/73x1bjeh1BF3odCf/it/u=138126325,1485620701&fm=85&s=7FAB2EC3909A35D01E299C1A030010D2")
 
-    document.getElementById("text").addEventListener("blur", function () {
-      makeCode();
-    })
-
-    document.getElementById("text").addEventListener("keydown", function (e) {
-      if (e.keyCode == 13) {
-        makeCode();
+    //绑定下载事件
+    var btn = document.getElementById('btn1');
+    btn.onclick = function () {
+      var type = 'png';
+     download(canvas, type);
+    }
+    document.getElementById('btn2').onclick = function () {
+      var type = 'jpg';
+      download(canvas, type);
+    }
+    //图片下载操作,指定图片类型
+    const download = (canvas, type) => {
+      //设置保存图片的类型
+      var imgdata = canvas.toDataURL(type);
+      //将mime-type改为image/octet-stream,强制让浏览器下载
+      var fixtype = function (type) {
+        type = type.toLocaleLowerCase().replace(/jpg/i, 'jpeg');
+        var r = type.match(/png|jpeg|bmp|gif/)[0];
+        return 'image/' + r;
       }
-    });
+      imgdata = imgdata.replace(fixtype(type), 'image/octet-stream')
+      //将图片保存到本地
+      var saveFile = function (data, filename) {
+        var link = document.createElement('a');
+        link.href = data;
+        link.download = filename;
+        var event = document.createEvent('MouseEvents');
+        event.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+        link.dispatchEvent(event);
+      }
+      var filename = new Date().toLocaleDateString() + '.' + type;
+      saveFile(imgdata, filename);
+    }
   </script>
 </body>
 
