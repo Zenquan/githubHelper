@@ -12,7 +12,7 @@ chrome.tabs.getSelected(null, function (tab) {
       || match(/\/tree\/master\//) 
       || match(/\/blob\/master\//)) {
 
-      arr = arr.slice(0, 4)
+      arr = arr.slice(0, 5)
       // https://github.com/Zenquan/quickgit.git -> https://github.com.cnpmjs.org/Zenquan/quickgit.git
       arr.splice(2, 1, 'github.com.cnpmjs.org')
 
