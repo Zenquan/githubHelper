@@ -16,6 +16,8 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 - 优点：亲测！速度真的很快。
 - 缺点：但是每次都要去这么拼凑一下十分麻烦，所以就写了这样一个简单的插件来解决这个需求
 
+## 补充需求
+
 - [x] https://github.com/Zenquan/quickgitclone/blob/master/content-script.js ->  https://github.com.cnpmjs.org/Zenquan/quickgitclone.git
 
 - [x] https://github.com/Zenquan/quickgitclone/tree/master/img ->  https://github.com.cnpmjs.org/Zenquan/quickgitclone.git
@@ -24,7 +26,7 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 - [x] 生成和下载二维码
 
-## 使用
+## 使用说明
 
 1.克隆到本地
 
