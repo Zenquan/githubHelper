@@ -26,6 +26,16 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 - [x] 生成和下载二维码
 
+- [ ] 输入`{"name": "zenquan", "age": 25, "sex": "female"}` 转换成 
+```json
+{
+	name:  String,
+	age:  Number,
+	sex:  String,
+}
+```
+后复制
+
 ## 使用说明
 
 1.克隆到本地

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <textarea name="toTsTypes" id="toTsTypes" cols="30" rows="10"></textarea>
+  <button id="change">转换</button>
+  <script>
+    const apiObjs = {
+      "name": "zenquan",
+      "age": 25,
+      "sex": "female"
+    }
+
+    const createInput = inputValue => {
+      let inputEle = document.createElement('input')
+      inputEle.value = inputValue
+      return inputEle
+    }
+
+    const types = value => {
+      return Object.prototype.toString.call(value).slice(-8, -1)
+    }
+
+    const formatJson = apiObjs => {
+      return apiObjs
+    }
+
+    const generateResult = (apiObjs) => {
+      let resultStr = ''
+      for (let [key, value] of Object.entries(JSON.parse(formatJson(apiObjs)))) {
+        resultStr += `\t${key}: ${types(value)},\n`
+      }
+
+      return resultStr
+    }
+
+    const _$ = id => document.getElementById(id)
+    const toTsTypes = _$('toTsTypes')
+
+    _$('change').addEventListener('click', () => {
+      toTsTypes.value = `{\n${generateResult(toTsTypes.value)}}`
+    })
+  </script>
+</body>
+
+</html>
