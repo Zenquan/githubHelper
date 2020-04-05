@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container {
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+  <button id="createButton">+</button>
+  <script>
+    // 创建input
+    const createInput = () => {
+      let inputEle = document.createElement('input')
+      // inputEle.value = inputValue
+      document.getElementById('container').appendChild(inputEle)
+    }
+    
+    document.getElementById('createButton').addEventListener('click', () => {
+      createInput()
+    })
+  </script>
+</body>
+
+</html>

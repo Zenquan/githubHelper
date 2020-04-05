@@ -26,7 +26,8 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 - [x] 生成和下载二维码
 
-- [ ] 输入`{"name": "zenquan", "age": 25, "sex": "female"}` 转换成 
+- [ ] http://120.78.139.137:8787/totstypes 输入`{"name": "zenquan", "age": 25, "sex": "female"}` 转换成 
+
 ```json
 {
 	name:  String,
@@ -35,6 +36,8 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 }
 ```
 后复制
+
+todo：1. 对json标准格式化；2. 支持多层嵌套中的问题
 
 ## 使用说明
 

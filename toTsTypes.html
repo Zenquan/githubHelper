@@ -8,19 +8,13 @@
 </head>
 
 <body>
-  <textarea name="toTsTypes" id="toTsTypes" cols="30" rows="10"></textarea>
+  <textarea name="toTsTypes" id="toTsTypes" cols="100" rows="10"></textarea>
   <button id="change">转换</button>
   <script>
     const apiObjs = {
       "name": "zenquan",
       "age": 25,
       "sex": "female"
-    }
-
-    const createInput = inputValue => {
-      let inputEle = document.createElement('input')
-      inputEle.value = inputValue
-      return inputEle
     }
 
     const types = value => {
