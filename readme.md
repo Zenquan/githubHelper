@@ -26,6 +26,8 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 - [x] 生成和下载二维码
 
+- [x] 选中文本右击进行百度（因为某些原因导致我们很难谷歌搜索东西，所以就是要百度或者必应）
+
 - [ ] http://120.78.139.137:8787/totstypes 输入`{"name": "zenquan", "age": 25, "sex": "female"}` 转换成 
 
 ```json
@@ -53,6 +55,8 @@ git clone https://github.com.cnpmjs.org/Zenquan/quickgitclone.git
 ![](https://user-gold-cdn.xitu.io/2020/4/2/17136886106ef35d?w=1918&h=202&f=png&s=15283)
 ![](https://user-gold-cdn.xitu.io/2020/4/2/171368d61eb89488?w=946&h=400&f=png&s=18764)
 
+
 最后的效果
 
 ![](https://user-gold-cdn.xitu.io/2020/4/2/1713937dc02ee9c0?w=805&h=406&f=png&s=9315)
+![](https://user-gold-cdn.xitu.io/2020/4/12/1716c4e28b57740b?w=612&h=604&f=png&s=48561)
