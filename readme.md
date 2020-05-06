@@ -54,11 +54,15 @@ import {Page, Text, Line} from './style'
 import styled from 'styled-components'
 
 export const Page = styled.div`
- 
+
 `
 
 export const Text = styled.div`
- 
+
+`
+
+export const Line = styled.div`
+
 `
 
 <Page></Page>
