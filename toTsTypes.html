@@ -33,6 +33,11 @@
         arr && arr.map(a => {
           resultStr += `export const ${a} ` + "= styled.div`\n\n`\n\n"
         })
+
+        arr && arr.map(a => {
+          resultStr += `<${a}></${a}>\n`
+        })
+
       } else {
         resultStr = '{'
         for (let [key, value] of Object.entries(JSON.parse(formatJson(apiObjs)))) {

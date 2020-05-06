@@ -61,6 +61,10 @@ export const Text = styled.div`
  
 `
 
+<Page></Page>
+<Text></Text>
+<Line></Line>
+
 ```
 
 ## 使用说明
