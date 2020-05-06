@@ -27,9 +27,21 @@
 
     const generateResult = (apiObjs) => {
       let resultStr = ''
-      for (let [key, value] of Object.entries(JSON.parse(formatJson(apiObjs)))) {
-        resultStr += `\t${key}: ${types(value)},\n`
+      if (/\.\/style/.test(apiObjs)) {
+        resultStr = "import styled from 'styled-components'\n\n"
+        const arr = apiObjs.match(/([A-Z])\w+/g)
+        arr && arr.map(a => {
+          resultStr += `export const ${a} ` + "= styled.div`\n\n`\n\n"
+        })
+      } else {
+        resultStr = '{'
+        for (let [key, value] of Object.entries(JSON.parse(formatJson(apiObjs)))) {
+          resultStr += `\t${key}: ${types(value)},\n`
+        }
+
+        resultStr += '}'
       }
+      
 
       return resultStr
     }
@@ -38,7 +50,7 @@
     const toTsTypes = _$('toTsTypes')
 
     _$('change').addEventListener('click', () => {
-      toTsTypes.value = `{\n${generateResult(toTsTypes.value)}}`
+      toTsTypes.value = `${generateResult(toTsTypes.value)}`
     })
   </script>
 </body>

@@ -41,11 +41,11 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 todo：1. 对json标准格式化；2. 支持多层嵌套中的问题
 
-- [ ] 最近在使用styled-components，发现写起来虽然有点爽，只是都要去export 定义很多个，实在麻烦，所以
+- [x] 最近在使用styled-components，发现写起来虽然有点爽，只是都要去export 定义很多个，实在麻烦，所以
 造东西的时候有到了
 
 ```js
-import {Page, Text} from './style'
+import {Page, Text, Line} from './style'
 ```
 
 => 
