@@ -28,7 +28,7 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 
 - [x] 选中文本右击进行百度（因为某些原因导致我们很难谷歌搜索东西，所以就是要百度或者必应）
 
-- [ ] http://120.78.139.137:8787/totstypes 输入`{"name": "zenquan", "age": 25, "sex": "female"}` 转换成 
+- [x] http://120.78.139.137:8787/totstypes 输入`{"name": "zenquan", "age": 25, "sex": "female"}` 转换成 
 
 ```json
 {
