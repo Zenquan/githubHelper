@@ -1,5 +1,4 @@
 # quickgitclone
-
 ## 背景
 
 不知道从什么时候开始，git clone变得如此的慢，所以很多时候 git clone 都会出问题，最近看到有两个方案。
@@ -27,6 +26,10 @@ https://github.com/Zenquan/quickgitclone.git -> https://github.com.cnpmjs.org/Ze
 - [x] 生成和下载二维码
 
 - [x] 选中文本右击进行百度（因为某些原因导致我们很难谷歌搜索东西，所以就是要百度或者必应）
+
+- [ ] 增加github1s的点击跳转
+
+- [ ] 设置默认导航
 
 - [x] http://120.78.139.137:8787/totstypes 输入`{"name": "zenquan", "age": 25, "sex": "female"}` 转换成 
 
