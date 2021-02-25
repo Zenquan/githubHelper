@@ -23,13 +23,16 @@ chrome.tabs.getSelected(null, function (tab) {
     let copyFn = () => {
       input.select(); // 选择对象
       document.execCommand("Copy"); // 执行浏览器复制命令
-      alert("already copyed");
+      alert("操作已复制");
     }
 
     // 点击复制按钮监听事件
     copyButton.addEventListener('click', copyFn)
   } else {
     arr = []
+    copyButton.addEventListener('click', () => {
+      alert("操作不适用");
+    })
   }
 
   input.value = arr.length 
@@ -63,9 +66,13 @@ chrome.tabs.getSelected(null, function (tab) {
 
   // 去github1s
   _$('github1s').addEventListener('click', () => {
-    const url = tab.url.replace(/github/, 'github1s')
-    window.location.href = url
-    window.open(url)
+    const isSuitGithub1s = tab.url.match(/github.com/);
+    if (isSuitGithub1s) {
+      const url = tab.url.replace(/github/, 'github1s')
+      window.location.href = url
+      window.open(url)
+    }
+    alert('不适合使用github1s');
   })
 
   const child = idx => _$('qrcode').childNodes[idx]
