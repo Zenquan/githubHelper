@@ -36,7 +36,7 @@ chrome.tabs.getSelected(null, function (tab) {
     ? `git clone ${arr.join('/')}.git` 
     : tab.url
 
-   /*
+  /*
   * 
   * 如二维码的生成和下载
   */
@@ -59,6 +59,13 @@ chrome.tabs.getSelected(null, function (tab) {
   _$('generQcode').addEventListener('click', () => {
     _$('footer').style.display = 'block'
     qrodeUtil.makeCode(qrcode, arr, input);
+  })
+
+  // 去github1s
+  _$('github1s').addEventListener('click', () => {
+    const url = tab.url.replace(/github/, 'github1s')
+    window.location.href = url
+    window.open(url)
   })
 
   const child = idx => _$('qrcode').childNodes[idx]
