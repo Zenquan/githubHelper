@@ -18,22 +18,19 @@ chrome.tabs.getSelected(null, function (tab) {
     arr = arr.slice(0, 5)
     // https://github.com/Zenquan/quickgit.git -> https://github.com.cnpmjs.org/Zenquan/quickgit.git
     arr.splice(2, 1, 'github.com.cnpmjs.org')
-
-    // 点击复制函数
-    let copyFn = () => {
-      input.select(); // 选择对象
-      document.execCommand("Copy"); // 执行浏览器复制命令
-      alert("操作已复制");
-    }
-
-    // 点击复制按钮监听事件
-    copyButton.addEventListener('click', copyFn)
   } else {
-    arr = []
-    copyButton.addEventListener('click', () => {
-      alert("操作不适用");
-    })
+    arr = [];
   }
+
+
+  // 点击复制函数
+  let copyFn = () => {
+    input.select(); // 选择对象
+    document.execCommand("Copy"); // 执行浏览器复制命令
+    alert("已复制");
+  }
+  // 点击复制按钮监听事件
+  copyButton.addEventListener('click', copyFn)
 
   input.value = arr.length 
     ? `git clone ${arr.join('/')}.git` 
