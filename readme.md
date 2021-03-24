@@ -5,6 +5,7 @@
 - git clone加速
 - release、source、zip下载加速
 - raw、blame下载加速
+- 支持github1s跳转
 
 ## 备注说明
 克隆下来的目录的.git/config中的
