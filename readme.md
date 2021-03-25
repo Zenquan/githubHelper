@@ -15,6 +15,20 @@
 ```
 url为`https://github.com.cnpmjs.org`的服务链接，并不是`https://github.com`， 所以需要`git push`时，重新登录github账号，或者会push失败，所以解决方案是把以上`https://github.com.cnpmjs.org`改为`https://github.com`。
 
+## 插件效果
+
+### git clone、zip加速
+<img src="https://cdn.jsdelivr.net/gh/zenquan/diagrams@master/img/github-helper-git-clone.png" style="width: 400px;" alt="github-helper-git-clone"/><br><br><br>
+
+### release、source、zip下载加速
+<img src="https://cdn.jsdelivr.net/gh/zenquan/diagrams@master/img/release.png" style="width: 400px;"/><br><br><br>
+
+### raw、blame下载加速
+<img src="https://cdn.jsdelivr.net/gh/zenquan/diagrams@master/img/raw.png" style="width: 400px;"/><br><br><br>
+
+### 支持github1s跳转
+<img src="https://cdn.jsdelivr.net/gh/zenquan/diagrams@master/img/github1s.png)" style="width: 400px;"/><br><br><br>
+
 ## 感谢
 
 依赖项目
