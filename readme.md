@@ -28,7 +28,7 @@ url为`https://github.com.cnpmjs.org`的服务链接，并不是`https://github.
 <img src="https://cdn.jsdelivr.net/gh/zenquan/diagrams@master/img/raw.png" style="width: 400px;"/><br><br><br>
 
 ### 支持github1s跳转
-<img src="https://cdn.jsdelivr.net/gh/zenquan/diagrams@master/img/github1s.png)" style="width: 400px;"/><br><br><br>
+<img src="https://cdn.jsdelivr.net/gh/zenquan/diagrams@master/img/github1s.png" style="width: 400px;"/><br><br><br>
 
 ## 感谢
 
