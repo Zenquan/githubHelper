@@ -42,7 +42,6 @@ url为`https://github.com.cnpmjs.org`的服务链接，并不是`https://github.
 - [https://gh.con.sh/](https://gh.con.sh/)
 - [https://gh.api.99988866.xyz/](https://gh.api.99988866.xyz/)
 - [fastgit](https://fastgit.org/)
-- [https://gh.xiu2.xyz](https://gh.xiu2.xyz)
 - [https://ghproxy.com](https://ghproxy.com)
 - [https://pd.zwc365.com/seturl](https://pd.zwc365.com/seturl)
 - [https://gitclone.com](https://gitclone.com)
