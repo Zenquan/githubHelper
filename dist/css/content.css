@@ -1,0 +1,21 @@
+.greet[data-v-ae4fb012] {
+  position: absolute;
+  top: 21.8vh;
+  /* right: 0; */
+  z-index: 999;
+}
+.greet .github-helper-btn[data-v-ae4fb012] {
+    width: 32px;
+    height: 120px;
+}
+.greet .github-helper-txt[data-v-ae4fb012] {
+    -webkit-transform: rotate(-90deg) translateX(-90px);
+            transform: rotate(-90deg) translateX(-90px);
+}
+.greet .github-helper-content[data-v-ae4fb012] {
+    width: 370px;
+    height: 250px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
