@@ -2,7 +2,6 @@ export const download_url = [
   ["https://gh.con.sh", "美国"],
   ["https://gh.api.99988866.xyz", "美国"],
   ["https://download.fastgit.org", "日本东京"],
-  ["https://gh.xiu2.xyz", "日本东京"],
   ["https://ghproxy.com", "韩国首尔"],
   ["https://pd.zwc365.com/seturl", "中国香港"]
 ];
