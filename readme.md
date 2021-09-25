@@ -1,5 +1,9 @@
 # githubHelper
+![](https://img.shields.io/github/stars/Zenquan/githubHelper)
+![](https://img.shields.io/github/forks/Zenquan/githubHelper)
+![](https://img.shields.io/github/license/Zenquan/githubHelper)
 > 这是一个辅助github，适用于Chromium内核浏览器的浏览器插件
+
 
 ## 特色
 - git clone加速
